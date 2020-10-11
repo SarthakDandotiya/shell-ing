@@ -1,0 +1,61 @@
+#/bin/bash
+
+# While Loop: While condition resolves to a true value, run command
+# while condition
+# do
+#   command
+# done
+
+# Until: Until condition resolves to a true value, run command
+# until condition
+# do
+#   command
+# done
+
+# For in: Iterate a list and execute a command for each item
+# for item in list
+# do
+#   command
+# done
+
+# For Loop: A normal for loop
+# for i in {START..END..STEP}
+# do
+#    commands
+# done
+
+#can use the break and continue statements to break the loop completely, or just skip the current iteration.
+
+i=1
+while [ "$i" -lt 10 ]
+do
+	j=1
+	while [ "$j" -le "$i" ]
+	do
+		echo -n "$j"
+		((j++))
+	done
+	echo
+	((i++))
+done
+echo
+
+for k in {1..10}
+do
+	echo -n $k " "
+done
+echo
+echo
+
+for (( COUNTER=0; COUNTER<=20; COUNTER+=2 ))
+do
+        echo -n $COUNTER " "
+done
+echo
+echo
+
+for l in `seq 1 2 20`
+do
+	echo -n $l " "
+done
+echo

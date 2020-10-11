@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Arithmetic Opertators:
+# + add
+# - subtract
+# * multiply
+# / divide
+# % modulo (remainder of the division)
+# ** exponentiation
+
+# Comparison Operators:
+# <
+# <=
+# ==
+# >=
+# >
+
+# Can also use-
+# -lt (lower than)
+# -gt (greater than)
+# -le (lower or equal than)
+# -ge (greater or equal than)
+# -eq (equal to)
+# -ne (not equal tag)
+
+a=23
+b=16
+if test $a -gt $b
+then
+	echo "A is greater than B"
+fi
+
+# Logical Operators:
+# && (logical AND)
+# || (logical OR)
+
+# Shorthands, allow to perform arithmetic operation then assignment
+# +=
+# -=
+# *=
+# /=
+# %=

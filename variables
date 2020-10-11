@@ -1,0 +1,4 @@
+#!/bin/bash
+# name=value
+name="Sarthak"
+echo $name

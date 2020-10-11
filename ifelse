@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# if/else Statements:
+
+# Simple if-
+# if condition
+# then
+#   command
+# fi
+
+# if then else-
+# if condition
+# then
+#   command
+# else
+#   anothercommand
+# fi
+
+# Nested if - then - else-
+# if condition
+# then
+#   command
+# elif
+#   anothercommand
+# else
+#   yetanothercommand
+# fi
+
+# Example-
+NAME="Sarthak"
+AGE=21
+if [ "$NAME" == "" ]; then
+	echo "Invalid Name!"
+elif [ "$AGE" -lt 18 ]; then
+	echo "$NAME is Ineligible to Vote"
+else
+	echo "$NAME is $AGE years old and Eligible to Vote"
+fi
