@@ -1,0 +1,30 @@
+#!/bin/bash
+# Case:
+# A case control structure lets you pick different routes depending on a value
+# case value in
+#   a)
+#     command
+#     #...
+#     ;;
+#   b)
+#     command
+#     #...
+#     ;;
+# esac
+#We add a double semicolon after each case.
+#A *) case would handle all the cases not explicitly expressed. Using a | symbol you can express multiple choices for a single case.
+
+read -p "How many shoes do you have? " value
+case $value in
+  0|1)
+    echo "Not enough shoes! You can't walk"
+    ;;
+  2)
+    echo "Awesome! Go walk!"
+    #...
+    ;;
+  *)
+    echo "You got more shoes than you need"
+    #...
+    ;;
+esac

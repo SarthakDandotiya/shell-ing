@@ -1,0 +1,20 @@
+#!/bin/bash
+# Select:
+# A select structure shows the user a menu of choices to choose:
+# select item in list
+# do
+#   command
+# done
+
+echo "Choose your favourite brand:"
+select brand in Adidas Nike Puma Reebok Sketchers STOP
+do
+	if [ "$brand" == "" ];
+	then
+		echo "PLease choose one";
+	else
+		break
+	fi
+done
+
+echo "Your favourite brand is" $brand
